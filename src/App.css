@@ -1,0 +1,67 @@
+#root {
+  margin: 0 auto;
+}
+.container{
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* circle animation */
+
+.circleDark{
+  transition-duration: 2s, 1s;
+  transform: translate(-42%);
+}
+.circle{
+  transition-duration: 2s, 1s;
+  transform: translate(0%);
+}
+.rotate{
+  width: 100px;
+  animation: rotation 2s;
+}
+
+/* Dark && Light mode */
+
+.lightMode{
+  background: #b9bdc6;
+  color: black; 
+
+  transition: background 3s ease;
+}
+
+.darkMode{
+  background: #3A3E46;
+  color: white; 
+  transition: background 3s ease;
+}
+
+/* button */
+
+button{
+  position:absolute;
+  z-index: 2;
+  background-color: transparent;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer; 
+}
+
+/* text styling */
+
+.lightText,.darkText{
+  position:absolute;
+  z-index: 1;
+  font-size: 65px;
+}
+.lightText{
+  bottom: 45%;
+  left: 38%;
+}
+.darkText{
+  top: 42%;
+  right: 38%;
+}
